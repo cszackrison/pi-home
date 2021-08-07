@@ -6,7 +6,7 @@ import { useDrag } from 'react-use-gesture';
 import './styles';
 
 const App = () => {
-	const height = window.innerHeight - 22 - 260;
+	const height = window.innerHeight - 282;
 	const [{ y }, set] = useSpring(() => ({ y: height }));
 
 	const open = ({ canceled }) => set({ y: -173, immediate: false, config: config.stiff });

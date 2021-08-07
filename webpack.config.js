@@ -42,9 +42,7 @@ module.exports = {
         ],
     },
     plugins: [
-		new HtmlWebpackPlugin({ title: 'Multiple Choice' }),
-        new HtmlWebpackTagsPlugin({ append: false, links: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap' }),
-		!isDevelopment && new CopyWebpackPlugin({ patterns: [ 'schema.json', 'imsmanifest.xml', { context: 'node_modules/@allencomm/datatracking/build/SCORM/SCORM_2004', from: '*', to: './' } ] }),
+		new HtmlWebpackPlugin(),
         isDevelopment && new ReactRefreshPlugin()
     ].filter(Boolean)
 };
