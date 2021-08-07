@@ -1,0 +1,42 @@
+{
+  "name": "pi-home",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cszackrison/pi-home.git"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "webpack serve --hot"
+  },
+  "browserslist": "> 1%, IE 11, not dead",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "babel-loader": "^8.1.0",
+    "classnames": "^2.2.6",
+    "copy-webpack-plugin": "^6.4.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.0.1",
+    "html-webpack-plugin": "^4.5.0",
+    "html-webpack-tags-plugin": "^2.0.17",
+    "react-refresh": "^0.9.0",
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.5",
+    "style-loader": "^2.0.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.23.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-spring": "^9.2.4",
+    "react-use-gesture": "^9.1.3"
+  }
+}
